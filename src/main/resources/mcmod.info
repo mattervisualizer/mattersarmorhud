@@ -1,0 +1,9 @@
+[{
+  "modid": "mattersarmorhud",
+  "name": "matter's armor hud",
+  "description": "Minimalist vanilla-like widget showing your armor and durability. Inspired by uku's Armor HUD.",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "logoFile": "pack.png",
+  "authorList": ["mattervisualizer"]
+}]

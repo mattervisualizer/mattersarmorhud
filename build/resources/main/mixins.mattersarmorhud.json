@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "ru.matter.visualizer.armorhud.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "mixins.mattersarmorhud.refmap.json",
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
