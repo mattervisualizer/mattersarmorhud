@@ -1,5 +1,19 @@
-This mod adds a minimalist vanilla-like widget that shows your armor items and a warning if durability is low enough. While other mods expect the player to look at numbers all over the screen, this mod allows to see your armor items in a vanilla-style minimalist widget without extra text or numbers. Position and other parameters of the widget can be adjusted in the configuration file.
+# matter's armor hud (1.12.2, Forge)
 
-Made for legacy (and the best) 1.12.2 Minecraft version
+Minimalist vanilla-like armor widget. Inspired by uku's Armor HUD.
+Renders equipped armor + durability near the hotbar via a Forge
+overlay event. Structure mirrors the Clipper project so Gradle
+reuses the existing cache and downloads nothing new.
 
-Inspired by [uku's Armor HUD](https://modrinth.com/mod/ukus-armor-hud), [original mod](https://www.curseforge.com/minecraft/mc-mods/berdinskiybears-armor-hud) by BerdinskiyBear
+## Build
+Use the SAME JDK 8 you used for Clipper, and do NOT use
+--refresh-dependencies (that forces re-downloads).
+
+    $env:JAVA_HOME = "C:\Users\mattervisualizer\.jdks\liberica-full-1.8.0_482"
+    .\gradlew build
+
+Output: build\libs\mattersarmorhud-1.0.jar  ->  drop into mods.
+
+## Tweak
+src\main\java\ru\matter\visualizer\armorhud\ArmorHud.java
+constants at top: SLOT_SIZE, SLOT_GAP, OFFSET_X, OFFSET_Y.
